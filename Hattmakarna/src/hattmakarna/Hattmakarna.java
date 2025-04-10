@@ -10,15 +10,14 @@ import oru.inf.InfException;
  * @author limme
  */
 public class Hattmakarna {
-
     private static InfDB idb; //skapar ett fält av klassen InfDB. Fältet som man vill lagra databasuppkopplingen i
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         try{
-            idb = new InfDB("hattmakarna","3306","dbAdmin2024","dbAdmin2024PW"); //Namnet på databasen, vilken port,användarnamnet till databasen, lösenordet för användaren
-            //new Inloggning(idb).setVisible(true);
+            idb = new InfDB("hattmakaren","3306","dbHattAdmin","dbHattAdminPW"); //Namnet på databasen, vilken port,användarnamnet till databasen, lösenordet för användaren
+            new Inloggningssida(idb).setVisible(true);
         }
         catch(InfException ex){ //om någotning går fel i uppkopplingen av databasen så kommer variabeln ex fånga upp de specifika felmeddelandena som finns i infdb-klassen
             System.out.println(ex.getMessage());   

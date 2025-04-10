@@ -17,7 +17,7 @@ public class Inloggningssida extends javax.swing.JFrame {
     /**
      * Creates new form Inloggningssida
      */
-    public Inloggningssida() {
+    public Inloggningssida(InfDB idb) {
         initComponents();
         this.idb = idb;
         lblFelMeddelande.setVisible(false); 
@@ -201,7 +201,7 @@ public class Inloggningssida extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Inloggningssida().setVisible(true);
+                //new Inloggningssida().setVisible(true);
             }
         });
     }
