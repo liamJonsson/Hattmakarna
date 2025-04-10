@@ -136,6 +136,7 @@ public class Inloggningssida extends javax.swing.JFrame {
         String losen = new String(losenord);
       
         try{
+            //Hej
             lblFelMeddelande.setVisible(false);
             //Validerar inmatningen
             if(validera.valideringEmail(ePost)){
