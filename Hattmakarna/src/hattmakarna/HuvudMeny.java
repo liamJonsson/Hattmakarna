@@ -32,57 +32,115 @@ public class HuvudMeny extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Kalender = new javax.swing.JButton();
+        SeBestallning = new javax.swing.JButton();
+        SeKunder = new javax.swing.JButton();
+        SeProdukt = new javax.swing.JButton();
+        SkapaBestallning = new javax.swing.JButton();
+        SkapaBestallningSpecial = new javax.swing.JButton();
+        Forsaljning = new javax.swing.JButton();
+        HanteraAnstalld = new javax.swing.JButton();
+        LoggaUt = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Kalender.setText("Visa kalenderschema");
+        Kalender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KalenderActionPerformed(evt);
+            }
+        });
+
+        SeBestallning.setText("Se alla beställningar");
+
+        SeKunder.setText("Se alla kunder");
+
+        SeProdukt.setText("Se alla produkter");
+
+        SkapaBestallning.setText("Skapa ny beställning");
+
+        SkapaBestallningSpecial.setText("Skapa ny specialbeställning");
+
+        Forsaljning.setText("Försäljningsstatistik");
+
+        HanteraAnstalld.setText("Hantera anställda");
+
+        LoggaUt.setText("Logga ut");
+
+        jLabel1.setText("Huvudmeny");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(HanteraAnstalld)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 145, Short.MAX_VALUE)
+                        .addComponent(LoggaUt)
+                        .addGap(25, 25, 25))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel1)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Forsaljning)
+                                .addComponent(SkapaBestallningSpecial)
+                                .addComponent(SkapaBestallning)
+                                .addComponent(SeProdukt)
+                                .addComponent(SeKunder)
+                                .addComponent(SeBestallning)
+                                .addComponent(Kalender)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(2, 2, 2)
+                .addComponent(Kalender)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(SeBestallning)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(SeKunder)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(SeProdukt)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(SkapaBestallning)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(SkapaBestallningSpecial)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Forsaljning)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(HanteraAnstalld)
+                    .addComponent(LoggaUt))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HuvudMeny.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HuvudMeny.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HuvudMeny.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HuvudMeny.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void KalenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KalenderActionPerformed
+        // TODO add your handling code here:
+        //new KalenderSchema(idb, inloggadAnvandare).setVisible();
+       // this.setVisible(false);
+    }//GEN-LAST:event_KalenderActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-           //     new HuvudMeny().setVisible(true);
-            }
-        });
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Forsaljning;
+    private javax.swing.JButton HanteraAnstalld;
+    private javax.swing.JButton Kalender;
+    private javax.swing.JButton LoggaUt;
+    private javax.swing.JButton SeBestallning;
+    private javax.swing.JButton SeKunder;
+    private javax.swing.JButton SeProdukt;
+    private javax.swing.JButton SkapaBestallning;
+    private javax.swing.JButton SkapaBestallningSpecial;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
