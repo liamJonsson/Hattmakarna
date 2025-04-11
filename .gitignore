@@ -26,3 +26,5 @@ replay_pid*
 /Hattmakarna/build/
 /Hattmakarna/dist/
 Hattmakarna/nbproject/project.properties
+/nbproject/private/
+/dist/
